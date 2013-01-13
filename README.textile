@@ -1,9 +1,13 @@
 h1. cvw_googleanalytics
 
-Dashboard widget for Perch CMS that uses OOcharts to display info and a chart of the last 30 days data from Google Analytics (GA).
-You will need two ID values in order for this widget to work. Currently, these are hardcoded into dashboard.php and you will need to amend the code here with the IDs before uploading the files. (I will improve this in the next version by adding these values into Perch settings).
+A dashboard widget for Perch CMS that uses OOcharts to display page views, unique visitors and a chart of the data from Google Analytics (GA).
+
+You will need to enter two ID values and the number of days GA data that you want to show (e.g the last 30 days) into Perch settings in order for this widget to work 
+
 Upload the entire directory to /perch/addons/apps.
-When you login to Perch, the widget will be registered and the GA data will appear in the Perch dashboard 
+
+When you login to Perch, the widget will be registered. Just enter the ID values and Number of Days in Perch settings and the GA data will appear in the Perch dashboard.
+Perch version 2.0.8 required. 
 
 h2. Google Analytics Profile ID and OOCharts ID
 
@@ -22,7 +26,7 @@ The Profile ID is shown just after the profile name
 To get the OOcharts ID
 Go to https://oocharts.org/ and click the "Get OOId" link.
 
-When you have these two values, add them in the spaces in dashboard.php. Then upload files as above.
+When you have these two values, add them into Perch settings along with the number of days data that you want to display.
 
 h3. Note: 
 

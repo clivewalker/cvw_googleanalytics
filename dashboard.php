@@ -1,5 +1,6 @@
 <?php
 	$Lang  = $API->get('Lang');
+	$Settings = $API->get('Settings');
 ?>
 <div class="widget">
 	<h2>
@@ -11,18 +12,18 @@
 	<script type="text/javascript">
 		
 			//Set your ooid
-			oo.setOOId("<--- add OO Charts ID here --->");
+			oo.setOOId("<?php echo $Settings->get('cvw_googleanalytics_ooid')->settingValue(); ?>");
 			
 			//set the date range to be the last 30 days
 				var end_date = new Date();
 			    var start_date = new Date();
-        		start_date.setDate(end_date.getDate() - 30);
+        		start_date.setDate(end_date.getDate() - <?php echo $Settings->get('cvw_googleanalytics_duration')->settingValue(); ?>);
 			
 			//load function
 			oo.load(function()
 			{		
 				//Create a new metric (aid, startDate, endDate)
-				var metric = new oo.Metric("<--add Google Profile ID here--->", new Date(start_date), new Date());
+				var metric = new oo.Metric("<?php echo $Settings->get('cvw_googleanalytics_gaid')->settingValue(); ?>", new Date(start_date), new Date());
 				
 				//Set the metric to pull from the visitor count
 				metric.setMetric('ga:visitors');
@@ -34,7 +35,7 @@
 			oo.load(function()
 			{		
 				//Create a new metric (aid, startDate, endDate)
-				var metric2 = new oo.Metric("<--add Google Profile ID here--->", new Date(start_date), new Date());
+				var metric2 = new oo.Metric("<?php echo $Settings->get('cvw_googleanalytics_gaid')->settingValue(); ?>", new Date(start_date), new Date());
 				
 				//Set the metric to pageviews
 				metric2.setMetric('ga:pageviews');
@@ -47,7 +48,7 @@
 			oo.load(function()
 			{
 				//Create a new timeline (aid, startDate, endDate)
-				var tl = new oo.Timeline("<--add Google Profile ID here--->", new Date(start_date), new Date());
+				var tl = new oo.Timeline("<?php echo $Settings->get('cvw_googleanalytics_gaid')->settingValue(); ?>", new Date(start_date), new Date());
 				
 				//Add the metric visitor count
 				tl.addMetric('ga:visitors', 'Visits');

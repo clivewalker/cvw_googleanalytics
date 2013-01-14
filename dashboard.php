@@ -27,7 +27,7 @@
 				
 				//Set the metric to pull from the visitor count
 				metric.setMetric('ga:visitors');
-				//draw in the h1 element with id 'met'
+				//draw in the h1 element with id 'visitors'
 				metric.draw('visitors');
 			});
 			

@@ -14,7 +14,7 @@
 			//Set your ooid
 			oo.setOOId("<?php echo $Settings->get('cvw_googleanalytics_ooid')->settingValue(); ?>");
 			
-			//set the date range to be the last 30 days
+			//set the date range 
 				var end_date = new Date();
 			    var start_date = new Date();
         		start_date.setDate(end_date.getDate() - <?php echo $Settings->get('cvw_googleanalytics_duration')->settingValue(); ?>);

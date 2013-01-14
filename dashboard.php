@@ -27,7 +27,7 @@
 				
 				//Set the metric to pull from the visitor count
 				metric.setMetric('ga:visitors');
-				//draw in the h1 element with id 'visitors'
+				//draw in the element with id 'visitors'
 				metric.draw('visitors');
 			});
 			
@@ -39,7 +39,7 @@
 				
 				//Set the metric to pageviews
 				metric2.setMetric('ga:pageviews');
-				//draw in the h1 element with id pageviews
+				//draw in the element with id pageviews
 				metric2.draw('pageviews');
 			});
 			

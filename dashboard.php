@@ -60,7 +60,7 @@
 				tl.setOption('colors', ['red', 'orange', 'yellow', 'green']);
 				
 				//Set Google visualization option for chart title
-				tl.setOption('title', 'My Timeline');
+				tl.setOption('title', 'Timeline - <?php echo $Settings->get('cvw_googleanalytics_duration')->settingValue(); ?> days');
 				
 				//draw in the div element with id 'timeline'
 				tl.draw('timeline');
@@ -68,10 +68,10 @@
 			
 		</script>
         <ul class="ga">
-			<li><h2 id="visitors"></h2>
-        		<h3>Unique Visitors</h3></li>
-        	<li><h2 id="pageviews"></h2>
-        		<h3>Page Views</h3></li>
+			<li><h2>Unique Visitors</h2>
+        		<h3 id="visitors"></h3></li>
+        	<li><h2>Page Views</h2>
+        		<h3 id="pageviews"></h3></li>
 		</ul>
         <div id="timeline"></div>
   </div>

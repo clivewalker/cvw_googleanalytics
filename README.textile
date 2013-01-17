@@ -7,6 +7,7 @@ You will need to enter two ID values and the number of days GA data that you wan
 Upload the entire directory to /perch/addons/apps.
 
 When you login to Perch, the widget will be registered. Just enter the ID values and Number of Days in Perch settings and the GA data will appear in the Perch dashboard.
+
 Perch version 2.0.8 required. 
 
 h2. Google Analytics Profile ID and OOCharts ID

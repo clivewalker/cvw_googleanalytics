@@ -4,7 +4,7 @@ A dashboard widget for Perch CMS that uses OOcharts to display page views, uniqu
 
 You will need to enter two ID values and the number of days GA data that you want to show (e.g the last 30 days) into Perch settings in order for this widget to work 
 
-Upload the entire directory to /perch/addons/apps.
+Download the zip file. Extract the _files_ into a folder/directory called cvw_googleanalytics. Upload the entire folder to /perch/addons/apps.
 
 When you login to Perch, the widget will be registered. Just enter the ID values and Number of Days in Perch settings and the GA data will appear in the Perch dashboard.
 

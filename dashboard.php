@@ -68,10 +68,8 @@
 			
 		</script>
         <ul class="ga">
-			<li><h2>Unique Visitors</h2>
-        		<h3 id="visitors"></h3></li>
-        	<li><h2>Page Views</h2>
-        		<h3 id="pageviews"></h3></li>
+			<li>Unique Visitors: <span id="visitors"></span></li>
+        	<li>Page Views: <span id="pageviews"></span></li>
 		</ul>
         <div id="timeline"></div>
   </div>

@@ -1,5 +1,9 @@
 h1. cvw_googleanalytics
 
+Please note that OO Charts (which this widget uses) is changing its conditions of service to become a paid service so we're no longer developing this widget. It probably won't work after 22 July 2013. Sorry about that.
+
+------------------------
+
 A dashboard widget for Perch CMS that uses OOcharts to display page views, unique visitors and a chart of the data from Google Analytics (GA).
 
 You will need to enter two ID values and the number of days GA data that you want to show (e.g the last 30 days) into Perch settings in order for this widget to work 

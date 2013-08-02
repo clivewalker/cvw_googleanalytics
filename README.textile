@@ -1,6 +1,8 @@
 h1. cvw_googleanalytics
 
-Please note that OO Charts (which this widget uses) is changing its conditions of service to become a paid service so we're no longer developing this widget. It probably won't work after 22 July 2013. Sorry about that.
+Please note that OO Charts (which this widget uses) has changed its API. This widget won't work after 22 July 2013 and I've not had time to recode it for the new API. Sorry about that.
+
+However, Paul Gregg has dome some great work with the new OOCharts API. His Spicy Analytics app/widget is described here http://support.grabaperch.com/index.php?pg=forums.posts&id=6731&pc=2 and you can download it from Github https://github.com/spicy-it/spicy_analytics
 
 ------------------------
 
